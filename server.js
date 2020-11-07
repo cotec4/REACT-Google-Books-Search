@@ -21,7 +21,9 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/Google",
   {
     useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
   }
 );
 
